@@ -15,9 +15,9 @@ import me.samuki.journeyDetails.presentation.states.JourneyDetailsState
 @Composable
 fun JourneyDetailsScreen(
     journeyDetailsNavigation: JourneyDetailsNavigation,
-    changeTitle: (String) -> Unit,
-    viewModel: JourneyDetailsViewModel = hiltViewModel()
+    changeTitle: (String) -> Unit
 ) {
+    val viewModel: JourneyDetailsViewModel = hiltViewModel()
     LaunchedEffect(Unit) {
         viewModel.initDetails(journeyDetailsNavigation.getJourneyDetailsIdArgument())
     }

@@ -14,6 +14,7 @@ dependencies {
     implementation(project(":core:domain"))
 
     implementation("com.squareup.sqldelight:android-driver:1.5.4")
+    api("com.squareup.sqldelight:coroutines-extensions:1.5.4")
 
     testImplementation(project(":core:testing"))
 }
